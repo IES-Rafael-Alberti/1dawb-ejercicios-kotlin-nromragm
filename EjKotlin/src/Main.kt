@@ -35,14 +35,28 @@ fun mostrarMenu(tipo: Int) {
                 println("3. Ejercicio 12")
                 println("4. Ejercicio 15")
                 println("5. Ejercicio 18")
+                println("6. Ejercicio 20")
+                println("7. Ejercicio 21")
+                println("8. Ejercicio 22")
+                println("9. Ejercicio 24")
+                println("10. Ejercicio 25")
+                println("11. Ejercicio 26")
+                println("12. Ejercicio 27")
 
-                op = pedirOpcion(0, 5)
+                op = pedirOpcion(0, 12)
                 when (op) {
                     1 -> ejU1_04()
                     2 -> ejU1_06()
                     3 -> ejU1_12()
                     4 -> ejU1_15()
                     5 -> ejU1_18()
+                    6 -> ejU1_20()
+                    7 -> ejU1_21()
+                    8 -> ejU1_22()
+                    9 -> ejU1_24()
+                    10 -> ejU1_25()
+                    11 -> ejU1_26()
+                    12 -> ejU1_27()
                 }
             }
 
