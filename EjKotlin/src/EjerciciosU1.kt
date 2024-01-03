@@ -67,3 +67,61 @@ fun ejU1_18() {
         ) else it.toString()
     }}")
 }
+
+
+fun ejU1_20() {
+    println("Escribe un número de teléfono en formato +34-XXXXXXXXXX-XX: ")
+    val telefono = readln()
+    val partes = telefono.split("-")
+    val numeroSinPrefijo = partes[1]
+
+    println("Número de teléfono sin prefijo: $numeroSinPrefijo")
+
+}
+
+fun ejU1_21() {
+    println("Escribe una frase: ")
+    val frase = readln()
+    val fraseInvertida = frase.reversed()
+
+    println("Frase invertida: $fraseInvertida")
+}
+
+fun ejU1_22() {
+    println("Escribe una frase: ")
+    val frase = readln()
+
+    println("Escribe una vocal: ")
+    val vocal = readln()
+
+    val vocalMayuscula = vocal.uppercase()
+    val fraseConVocalMayuscula = frase.replace(vocal, vocalMayuscula)
+
+    println("Frase con la vocal en mayúscula: $fraseConVocalMayuscula")
+}
+
+
+fun ejU1_24() {
+    println("Escribe el precio del producto con dos decimales: ")
+    val precio = readln().toFloat()
+    val euros = precio.toInt()
+    val centimos = ((precio - euros) * 100).toInt()
+
+    println("Número de euros: $euros")
+    println("Número de centimos: $centimos")
+}
+
+
+fun ejU1_25() {
+    println("Escribe tu fecha de nacimiento (dd/mm/aaaa): ")
+    val fecha = readln()
+    val partesFecha = fecha.split("/")
+    val dia = partesFecha[0]
+    val mes = partesFecha[1]
+    val ano = partesFecha[2]
+
+    println("Dia: $dia")
+    println("Mes: $mes")
+    println("Año: $ano")
+}
+
