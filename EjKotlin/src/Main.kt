@@ -1,5 +1,5 @@
 fun main() {
-    ejU1_18()
+    ejU1_27()
  /*   var op: Int
 
     do {
@@ -71,13 +71,13 @@ fun mostrarMenu(tipo: Int) {
 
                 op = pedirOpcion(0, 7)
                 when (op) {
-                    1 -> ejemplo3()
-                    2 -> ejemplo3()
-                    3 -> ejemplo3()
-                    4 -> ejemplo3()
-                    5 -> ejemplo3()
-                    6 -> ejemplo3()
-                    7 -> ejemplo3()
+                    1 -> ejU2_02()
+                    2 -> ejU2_02()
+                    3 -> ejU2_02()
+                    4 -> ejU2_02()
+                    5 -> ejU2_02()
+                    6 -> ejU2_02()
+                    7 -> ejU2_02()
                 }
             }
 

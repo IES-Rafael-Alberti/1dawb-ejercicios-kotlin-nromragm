@@ -125,3 +125,32 @@ fun ejU1_25() {
     println("Año: $ano")
 }
 
+
+fun ejU1_26() {
+    println("Introduce los productos de la cesta de la compra separados por comas: ")
+    val productos = readln()
+    val listaProductos = productos.split(",")
+
+    println("Productos en la cesta de la compra: ")
+    for (producto: String in listaProductos) {
+        println(producto.strip())
+    }
+}
+
+fun ejU1_27() {
+    println("Introduce el nombre del producto: ")
+    val producto = readln()
+
+    println("Introduce el precio unitario del producto: ")
+    val precioUnitario = readln().toFloat()
+
+    println("Introduce el número de unidades: ")
+    val numUnidades = readln().toInt()
+
+    val costeTotal = precioUnitario * numUnidades
+
+    val cadenaFormateada = "%s - Precio Unitario: %9.2f - Unidades: %3d - Coste Total: %11.2f".format(
+        producto, precioUnitario, numUnidades, costeTotal
+    )
+    println(cadenaFormateada)
+}
