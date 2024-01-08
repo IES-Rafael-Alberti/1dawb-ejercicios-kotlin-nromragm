@@ -1,6 +1,5 @@
 fun main() {
-    ejIt25()
- /*   var op: Int
+var op: Int
 
     do {
 
@@ -68,16 +67,33 @@ fun mostrarMenu(tipo: Int) {
                 println("5. EjCondicion 10")
                 println("6. EjIterativa 02")
                 println("7. EjIterativa 04")
+                println("8. EjIterativa 06")
+                println("9. EjIterativa 07")
+                println("10. EjIterativa 08")
+                println("11. EjIterativa 13")
+                println("12. EjIterativa 15")
+                println("13. EjIterativa 18")
+                println("14. EjIterativa 19")
+                println("15. EjIterativa 25")
 
-                op = pedirOpcion(0, 7)
+
+                op = pedirOpcion(0, 15)
                 when (op) {
-                    1 -> ejU2_02()
-                    2 -> ejU2_02()
-                    3 -> ejU2_02()
-                    4 -> ejU2_02()
-                    5 -> ejU2_02()
-                    6 -> ejU2_02()
-                    7 -> ejU2_02()
+                    1 -> ejCon_02()
+                    2 -> ejCon_03()
+                    3 -> ejCon_06()
+                    4 -> ejCon_08()
+                    5 -> ejCon_08()
+                    6 -> ejIt_02()
+                    7 -> ejIt_04()
+                    8 -> ejIt_06()
+                    9 -> ejIt_07()
+                    10 -> ejIt_08()
+                    11 -> ejIt_13()
+                    12 -> ejIt_15()
+                    13 -> ejIt_18()
+                    14 -> ejIt_19()
+                    15 -> ejIt_25()
                 }
             }
 
@@ -88,9 +104,9 @@ fun mostrarMenu(tipo: Int) {
 
                 op = pedirOpcion(0, 3)
                 when (op) {
-                    1 -> ejemplo2()
-                    2 -> ejemplo2()
-                    3 -> ejemplo2()
+                    1 -> ejIt_25()
+                    2 -> ejCon_03()
+                    3 -> ejCon_06()
                 }
             }
         }
@@ -139,6 +155,4 @@ fun limpiaConsola() {
     for (i in 1..20) {
         println()
     }
-
-  */
 }

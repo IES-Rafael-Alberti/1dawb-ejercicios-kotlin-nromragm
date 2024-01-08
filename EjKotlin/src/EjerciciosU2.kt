@@ -1,4 +1,4 @@
-fun ejCon02() {
+fun ejCon_02() {
     val password = "password"
     println("Introduce la contraseña: ")
     val passwordUsuario = readln()
@@ -11,7 +11,7 @@ fun ejCon02() {
 
 }
 
-fun ejCon03() {
+fun ejCon_03() {
     println("Introduce un numero: ")
     val num = readln().toInt()
     println("Introduce el divisor: ")
@@ -21,7 +21,7 @@ fun ejCon03() {
 
 }
 
-fun ejCon06() {
+fun ejCon_06() {
     println("Introduce tu nombre: ")
     val nombre = readln()
     println("Introduce tu sexo (M para mujer, H para hombre): ")
@@ -38,7 +38,7 @@ fun ejCon06() {
 
 }
 
-fun ejCon08() {
+fun ejCon_08() {
     println("Introduce tu nombre: ")
     val nombre = readln()
     println("Introduce tu sexo (M para mujer, H para hombre): ")
@@ -57,7 +57,7 @@ fun ejCon08() {
 
 
 
-fun ejIt02() {
+fun ejIt_02() {
     print("Introduce tu edad: ")
     var edad = readln().toInt()
     var resultado = ""
@@ -73,7 +73,7 @@ fun ejIt02() {
     println(resultado)
 }
 
-fun ejIt04() {
+fun ejIt_04() {
     print("Introduce un numero entero positivo: ")
     var num = readln().toInt()
     if (num < 0){
@@ -87,7 +87,7 @@ fun ejIt04() {
 }
 
 
-fun ejIt06() {
+fun ejIt_06() {
     print("Introduce un numero entero positivo: ")
     val num = readln().toInt()
     if (num < 0){
@@ -100,7 +100,7 @@ fun ejIt06() {
     }
 }
 
-fun ejIt07() {
+fun ejIt_07() {
 
     for (i in 1..10) {
         println("Tabla del $i:\n")
@@ -116,7 +116,7 @@ fun ejIt07() {
     }
 }
 
-fun ejIt08() {
+fun ejIt_08() {
     print("Introduce un numero entero positivo: ")
     val num = readln().toInt()
     if (num < 0){
@@ -133,7 +133,7 @@ fun ejIt08() {
 }
 
 
-fun ejIt13() {
+fun ejIt_13() {
     print("Introduce algo (salir para terminar): ")
     var x = readln()
     while (x != "salir"){
@@ -142,7 +142,7 @@ fun ejIt13() {
     }
 }
 
-fun ejIt15() {
+fun ejIt_15() {
     print("Introduce numeros enteros: ")
     var salir = false
     var suma = 0
@@ -159,7 +159,7 @@ fun ejIt15() {
     println("La suma de los numeros positivos introducidos es: $suma")
 }
 
-fun ejIt18() {
+fun ejIt_18() {
     print("Introduce numeros enteros positivos (-1 para salir): ")
     var salir = false
     var numerosPares = 0
@@ -184,7 +184,7 @@ fun ejIt18() {
 }
 
 
-fun ejIt19() {
+fun ejIt_19() {
     var salir = false
 
     while (!salir) {
@@ -209,7 +209,7 @@ fun ejIt19() {
     }
 }
 
-fun ejIt25() {
+fun ejIt_25() {
     print("Introduce una frase: ")
     val frase = readln()
     val palabras = frase.split(" ")
