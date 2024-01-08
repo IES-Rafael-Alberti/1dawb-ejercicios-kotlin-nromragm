@@ -1,5 +1,5 @@
 fun main() {
-    ejU1_27()
+    ejIt25()
  /*   var op: Int
 
     do {
