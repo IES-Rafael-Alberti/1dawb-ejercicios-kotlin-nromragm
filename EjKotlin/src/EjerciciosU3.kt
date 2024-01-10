@@ -35,4 +35,3 @@ fun ejListTup_04() {
         println(numerosGanadores[i])
     }
 }
-
