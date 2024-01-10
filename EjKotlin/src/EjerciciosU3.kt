@@ -1,6 +1,5 @@
 fun main(){
     ejListTup_04()
-    jifq()
 }
 
 fun ejListTup_04() {
@@ -38,6 +37,3 @@ fun ejListTup_04() {
 }
 
 
-fun jifq() {
-    println("hola")
-}
