@@ -1,21 +1,32 @@
 import java.util.*
 
 fun ejU1_04() {
-    println("Ingrese la temperatura en grados Celsius: ")
-    val celsius: Float = readln().toFloat()
-    val fahrenheit: Float = (celsius * 9/5) + 32
+    print("Ingrese la temperatura en grados Celsius: ")
+    try {
+        val celsius: Float = readln().toFloat()
+        val fahrenheit: Float = (celsius * 9/5) + 32
+        println("$celsius grados Celsius es igual a $fahrenheit grados Fahrenheit.")
 
-    println("$celsius grados Celsius es igual a $fahrenheit grados Fahrenheit.")
+    }catch (e:NumberFormatException) {
+        println("ERROR, Introduce un numero valido")
+    }
 }
 
 fun ejU1_06() {
-    println("Ingrese el importe final del articulo: ")
-    val importeFinal: Float = readln().toFloat()
-    val iva = importeFinal * 0.1
-    val importeSinIva: Double = importeFinal - iva
+    print("Ingrese el importe final del articulo: ")
+    try {
+        val importeFinal: Float = readln().toFloat()
+        val iva = importeFinal * 0.1
+        val importeSinIva: Double = importeFinal - iva
+        println("El importe sin IVA es: $importeSinIva.")
+        println("El IVA pagado es: $iva€")
 
-    println("El importe sin IVA es: $importeSinIva.")
-    println("El IVA pagado es: $iva€")
+    }catch (e:NumberFormatException){
+        println("ERROR, Introduce un numero valido")
+    }
+
+
+
 }
 
 fun ejU1_12() {

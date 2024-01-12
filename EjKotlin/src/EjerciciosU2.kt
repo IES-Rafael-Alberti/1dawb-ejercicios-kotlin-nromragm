@@ -194,7 +194,7 @@ fun ejIt_19() {
         println("3- Finalizar programa")
 
         print("Seleccione una opcion (1, 2 o 3): ")
-        val opcion = readLine().toString()
+        val opcion = readlnOrNull().toString()
 
         when (opcion) {
             "1" -> println("El programa ha comenzado")
@@ -213,13 +213,17 @@ fun ejIt_25() {
     print("Introduce una frase: ")
     val frase = readln()
     val palabras = frase.split(" ")
-    val numeroPalabras = palabras.size
     var palabraMasLarga = ""
-    for (palabra in palabras) {
-        if (palabra.length > palabraMasLarga.length) {
-            palabraMasLarga = palabra
+    if (frase.trim().isNotEmpty()){
+        for (palabra in palabras) {
+            if (palabra.length > palabraMasLarga.length) {
+                palabraMasLarga = palabra
+            }
         }
-    }
-    println("La palabra más larga es: $palabraMasLarga")
-    println("Hay un total de $numeroPalabras palabras")
+        println("La palabra más larga es: $palabraMasLarga")
+        println("Hay un total de ${palabras.size} palabras")
+
+    }else println("ERROR, Introduce una frase")
+
+
 }
