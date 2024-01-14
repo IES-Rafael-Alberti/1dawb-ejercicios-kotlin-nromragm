@@ -1,5 +1,5 @@
 fun main(){
-    ejDicc_06()
+    ejDicc_08()
 }
 
 fun ejListTup_04() {
@@ -176,7 +176,35 @@ fun ejDicc_07() {
 }
 
 fun ejDicc_08() {
+    println("Introduce las palabras en español e ingles separadas por dos puntos (ejemplo: casa:house, perro:dog)")
+    val entrada = readLine() ?: ""
 
+    val dosPalabras = entrada.split(", ")
+    val diccionario = mutableMapOf<String, String>()
+
+    for (i in dosPalabras) {
+        val partes = i.split(":")
+        if (partes.size == 2) {
+            diccionario[partes[0]] = partes[1]
+        }
+    }
+
+    println("Palabras en el diccionario:")
+    diccionario.forEach { (espanol, ingles) -> println("$espanol:$ingles") }
+
+    println("\nIntroduce una frase en español para traducirla:")
+    val frase = readLine() ?: ""
+
+    val palabras = frase.split(" ")
+    val fraseTraducida = mutableListOf<String>()
+
+    for (palabra in palabras) {
+        val traduccion = diccionario[palabra] ?: palabra
+        fraseTraducida.add(traduccion)
+    }
+
+    println("\nFrase traducida:")
+    println(fraseTraducida.joinToString(" "))
 }
 
 fun ejDicc_10() {
@@ -184,8 +212,29 @@ fun ejDicc_10() {
 }
 
 fun ejDicc_11() {
+    val directorioTexto = "nif;nombre;email;teléfono;descuento\n01234567L;Luis González;luisgonzalez@mail.com;656343576;12.5\n71476342J;Macarena Ramírez;macarena@mail.com;692839321;8\n63823376M;Juan José Martínez;juanjo@mail.com;664888233;5.2\n98376547F;Carmen Sánchez;carmen@mail.com;667677855;15.7"
+    val lineas = directorioTexto.split('\n')
+    val nombresCampos = lineas[0].split(';')
+    val directorioClientes = mutableMapOf<String, Map<String, String>>()
 
+    for (linea in lineas.subList(1, lineas.size)) {
+        if (linea.isNotBlank()) {
+            val valores = linea.split(';')
+            val clienteInfo = mutableMapOf<String, String>()
+            for (i in nombresCampos.indices) {
+                clienteInfo[nombresCampos[i]] = valores[i]
+            }
+            directorioClientes[valores[0]] = clienteInfo
+        }
+    }
+    for ((nif, clienteInfo) in directorioClientes) {
+        println()
+        for ((campo, valor) in clienteInfo) {
+            println("${campo.capitalize()}: $valor")
+        }
+    }
 }
+
 
 fun ejConj_01() {
     val compras = mutableListOf(
