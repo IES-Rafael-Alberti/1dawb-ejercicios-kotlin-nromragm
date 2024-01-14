@@ -1,7 +1,3 @@
-fun main(){
-    ejDicc_08()
-}
-
 fun ejListTup_04() {
     val numerosGanadores = mutableListOf<Int>()
 
